@@ -1,9 +1,11 @@
+
 h1 {
     color: blue;
 }
 
 body {
 	font-family: helvetica, arial, sans-serif;
+  margin: 0;
 }
 
 h1 {
@@ -11,24 +13,36 @@ h1 {
 	text-align: center;
 }
 
+#page {
+	height: 100vh;
+  display: flex;
+  /*align-content: space-between;*/
+  align-items: space-between;
+}
+
+
 #left-container {
 	background-color: #eee;
 	width: 15%;
-	left: 0px;
-	top: 0px;
-	position: absolute;
-	height: 100%;
-	padding: 10px;
+	height: 100vh;
+  padding: 10px;
+	display: flex;
+  align-items: space-between;
+  flex-direction: column;
+  order: 1;
 }
+  
+
 
 #right-container {
 	background-color: #eee;
 	width: 15%;
-	right: 0px;
-	top: 0px;
-	position: absolute;
-	height: 100%;
-	padding: 10px;
+	height: 100vh;
+  padding: 10px;
+	display: flex;
+	align-content: space-between;
+  flex-direction: column;
+  order: 3;
 }
 
 .plant-holder {
@@ -42,6 +56,11 @@ h1 {
 	max-width: 150%;
 	max-height: 150%;
 	z-index: 2;
+}
+
+#center-container {
+    order: 2;
+  flex-grow: 2;
 }
 
 .jar-walls {
@@ -100,4 +119,6 @@ h1 {
 	z-index: 1;
 }
 
-.jar-glossy-short
+.jar-glossy-short {
+	
+}
