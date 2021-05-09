@@ -106,8 +106,8 @@ h1 {
 	z-index: -1;
 }
 
-.jar-glossy-long {
-	position: absolute;
+/*.jar-glossy-long {
+	position: relative;
 	bottom: 50px;
 	left: 260px;
 	width: 15px;
@@ -119,7 +119,7 @@ h1 {
 }
 
 .jar-glossy-short {
-	position: absolute;
+	position: relative;
 	bottom: 160px;
 	left: 260px;
 	width: 15px;
@@ -128,4 +128,4 @@ h1 {
 	opacity: 1;
 	z-index: 1;
 	border-radius: 16px;
-}
+}*/
